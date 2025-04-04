@@ -3,36 +3,34 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
+
 const experiences = [
   {
-    job: "Front-End Developer",
-    company: "Alex Apps",
+    job: "Front-End Development Expertise",
     date: "2022 - Present",
     responsibilities: [
-      "Implementing reusable components.",
-      "Participating in large scale application.",
-      "Working on the performance of web applications.",
-      "Generating new ideas for better user experience.",
+      "Developed reusable and modular components for various web applications.",
+      "Contributed to the architecture and development of large-scale web apps.",
+      "Optimized web application performance for faster load times and smooth user experience.",
+      "Continuously generated and implemented innovative ideas to enhance user interface and user experience.",
     ],
   },
   {
-    job: "Course Instructor",
-    company: "Nucamp",
+    job: "Mentoring and Teaching Web Development",
     date: "2023 - Present",
     responsibilities: [
-      "Explaining and facilitating web development concepts.",
-      "Help students with their assignments and grade them weekly.",
-      "Provide support for students through their learning journey.",
+      "Explained and simplified complex web development concepts for beginners and advanced learners.",
+      "Provided hands-on support to students, guiding them through coding exercises and project implementations.",
+      "Evaluated assignments, providing constructive feedback to help students improve their skills.",
     ],
   },
   {
-    job: "Course Instructor",
-    company: "Sprints",
+    job: "Instruction in Modern Web Technologies",
     date: "2024 - Present",
     responsibilities: [
-      "Teaching JavaScript, React and TailwindCSS.",
-      "Participating in preparing course materials.",
-      "Helping students through their way in learning web development technologies.",
+      "Taught JavaScript, React, and TailwindCSS to students, focusing on building interactive and responsive web applications.",
+      "Contributed to preparing detailed and engaging course materials for various web development topics.",
+      "Guided students through practical projects, helping them apply their learning to real-world development scenarios.",
     ],
   },
 ];

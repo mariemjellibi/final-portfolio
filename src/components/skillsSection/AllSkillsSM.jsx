@@ -43,6 +43,29 @@ const skills = [
     icon: RiTailwindCssFill,
   },
 ];
+// const skills = [
+//   { skill: "HTML5", icon: FaHtml5  },
+//   { skill: "CSS3", icon: FaCss3Alt  },
+//   { skill: "JavaScript", icon: IoLogoJavascript  },
+//   { skill: "TypeScript", icon: <SiTypescript /> },
+//   { skill: "ReactJS", icon: <FaReact /> },
+//   { skill: "Redux", icon: <SiRedux /> },
+//   { skill: "NextJS", icon: <SiNextdotjs /> },
+//   { skill: "TailwindCSS", icon: <RiTailwindCssFill /> },
+//   { skill: "Node.js", icon: <DiNodejs /> },
+//   { skill: "Express", icon: <DiNodejs /> },
+//   { skill: "MongoDB", icon: <SiMongodb /> },
+//   { skill: "MySQL", icon: <SiMysql /> },
+//   { skill: "Git", icon: <FaGit /> },
+//   { skill: "GitHub", icon: <VscGithub /> },
+//   { skill: "GitLab", icon: <SiGitlab /> },
+//   { skill: "Firebase", icon: <SiFirebase /> },
+//   { skill: "Bootstrap", icon: <DiBootstrap /> },
+//   { skill: "Docker", icon: <FaDocker /> },
+//   { skill: "Figma", icon: <FaGit /> },
+//   { skill: "Python", icon: <FaPython /> },
+//   { skill: "Java", icon: <FaJava /> },
+// ];
 
 const AllSkillsSM = () => {
   return (
