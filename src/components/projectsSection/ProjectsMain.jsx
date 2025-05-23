@@ -8,7 +8,7 @@ const projects = [
     name: "Chat App",
     year: "2024",
     align: "right",
-    image: "/website-img-1.jpg",
+    image: "/images/website-img-1.jpg",
     link: "#",
   },
   {
