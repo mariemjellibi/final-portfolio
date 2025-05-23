@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
+// SingleExperience.jsx
 const SingleExperience = ({ experience }) => {
   return (
     <motion.div
@@ -8,15 +9,15 @@ const SingleExperience = ({ experience }) => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.7 }}
-      className="md:h-[500px] md:w-[240px] sm:h-auto sm:w-full border-2 border-orange border-dashed rounded-2xl mt-12 p-4 "
+      className="w-full md:w-[240px] md:min-h-[500px] border-2 border-orange border-dashed rounded-2xl p-4 mb-8 md:mb-0"
     >
       <p className="font-bold text-cyan">{experience.job}</p>
       <p className="text-orange">{experience.company}</p>
       <p className="text-lightGrey">{experience.date}</p>
-      <ul className="list-disc mt-4 pl-4  ">
-        {experience.responsibilities.map((resp, index) => {
-          return <li key={index}>{resp}</li>;
-        })}
+      <ul className="list-disc mt-4 pl-4">
+        {experience.responsibilities.map((resp, index) => (
+          <li key={index} className="mb-2 last:mb-0">{resp}</li>
+        ))}
       </ul>
     </motion.div>
   );

@@ -9,30 +9,41 @@ const NavbarMain = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div className="max-w-[1300px] mx-auto px-4 w-full fixed left-1/2 -translate-x-1/2 z-20 flex justify-between items-center mt-2">
-      {/* Navbar principale */}
-      <div className="flex justify-between w-full max-w-[1200px] mx-auto bg-black items-center p-6 rounded-full border-2 border-orange-500">
+    <div className="w-full fixed top-2 left-1/2 -translate-x-1/2 z-20 px-4">
+      <div className="mx-auto max-w-[1200px] w-full h-[60px] lg:h-[70px] bg-black border-2 border-orange-500 rounded-full flex items-center justify-between px-4 lg:px-6">
+        {/* Logo */}
         <NavbarLogo />
-        <div className="hidden lg:flex">
+
+        {/* Desktop Links */}
+        <div className="hidden lg:flex items-center gap-6">
           <NavbarLinks menuOpen={true} />
         </div>
-        <NavbarBtn />
+
+        {/* Desktop Button */}
+        <div className="hidden lg:block">
+          <NavbarBtn />
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden ml-auto">
+          <button
+            onClick={toggleMenu}
+            className="text-xl p-2 border border-orange-500 rounded-full text-white"
+          >
+            <GiHamburgerMenu size={20} />
+          </button>
+        </div>
       </div>
 
-      {/* Menu hamburger (visible uniquement sur petits écrans) */}
-      <div className="lg:hidden block bg-black text-white p-3 rounded-full border-2 border-orange-500 cursor-pointer">
-        <button
-          onClick={toggleMenu}
-          className="text-2xl p-3 border border-orange-500 rounded-full text-white"
-        >
-          <GiHamburgerMenu size={24} />
-        </button>
-      </div>
-
-      {/* Mobile Menu - Appears below navbar */}
-      <div className="lg:hidden absolute top-[70px] left-0 w-full">
-        <NavbarLinks menuOpen={menuOpen} />
-      </div>
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="lg:hidden bg-black border-2 border-orange-500 mt-2 rounded-xl p-4">
+          <NavbarLinks menuOpen={menuOpen} />
+          <div className="mt-4">
+            <NavbarBtn />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

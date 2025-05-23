@@ -3,7 +3,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
-
 const experiences = [
   {
     job: "Front-End Development Expertise",
@@ -37,26 +36,23 @@ const experiences = [
 
 const AllExperiences = () => {
   return (
-    <div className="flex md:flex-row sm:flex-col items-center justify-between">
-      {experiences.map((experience, index) => {
-        return (
-          <>
-            <SingleExperience key={index} experience={experience} />
-            {index < 2 ? (
-              <motion.div
-                variants={fadeIn("right", 0)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, amount: 0.7 }}
-              >
-                <FaArrowRightLong className="text-6xl text-orange lg:block sm:hidden" />
-              </motion.div>
-            ) : (
-              ""
-            )}
-          </>
-        );
-      })}
+    <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-8">
+      {experiences.map((experience, index) => (
+        <div key={index} className="flex flex-col items-center">
+          <SingleExperience experience={experience} />
+          {index < experiences.length - 1 && (
+            <motion.div
+              variants={fadeIn("right", 0)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.7 }}
+              className="my-4 md:my-0 md:mx-4"
+            >
+              <FaArrowRightLong className="text-4xl text-orange md:text-6xl" />
+            </motion.div>
+          )}
+        </div>
+      ))}
     </div>
   );
 };

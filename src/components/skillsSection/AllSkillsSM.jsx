@@ -1,71 +1,38 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
+
+import {
+  FaHtml5, FaCss3Alt, FaReact, FaGit, FaDocker, FaPython, FaJava
+} from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
+import { SiTypescript, SiRedux, SiNextdotjs, SiMongodb, SiMysql, SiGitlab, SiFirebase } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { DiNodejs, DiBootstrap } from "react-icons/di";
+import { VscGithub } from "react-icons/vsc";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
 const skills = [
-  {
-    skill: "HTML",
-    icon: FaHtml5,
-  },
-  {
-    skill: "CSS",
-    icon: FaCss3Alt,
-  },
-  {
-    skill: "JavaScript",
-    icon: IoLogoJavascript,
-  },
-  {
-    skill: "TypeScript",
-    icon: SiTypescript,
-  },
-  {
-    skill: "ReactJS",
-    icon: FaReact,
-  },
-  {
-    skill: "Redux",
-    icon: SiRedux,
-  },
-  {
-    skill: "NextJS",
-    icon: SiNextdotjs,
-  },
-  {
-    skill: "TailwindCSS",
-    icon: RiTailwindCssFill,
-  },
+  { skill: "HTML5", icon: FaHtml5 },
+  { skill: "CSS3", icon: FaCss3Alt },
+  { skill: "JavaScript", icon: IoLogoJavascript },
+  { skill: "TypeScript", icon: SiTypescript },
+  { skill: "ReactJS", icon: FaReact },
+  { skill: "Redux", icon: SiRedux },
+  { skill: "NextJS", icon: SiNextdotjs },
+  { skill: "TailwindCSS", icon: RiTailwindCssFill },
+  { skill: "Node.js", icon: DiNodejs },
+  { skill: "Express", icon: DiNodejs },
+  { skill: "MongoDB", icon: SiMongodb },
+  { skill: "MySQL", icon: SiMysql },
+  { skill: "Git", icon: FaGit },
+  { skill: "GitHub", icon: VscGithub },
+  { skill: "GitLab", icon: SiGitlab },
+  { skill: "Firebase", icon: SiFirebase },
+  { skill: "Bootstrap", icon: DiBootstrap },
+  { skill: "Docker", icon: FaDocker },
+  { skill: "Figma", icon: FaGit }, // Consider replacing FaGit with a Figma icon (see note below)
+  { skill: "Python", icon: FaPython },
+  { skill: "Java", icon: FaJava },
 ];
-// const skills = [
-//   { skill: "HTML5", icon: FaHtml5  },
-//   { skill: "CSS3", icon: FaCss3Alt  },
-//   { skill: "JavaScript", icon: IoLogoJavascript  },
-//   { skill: "TypeScript", icon: <SiTypescript /> },
-//   { skill: "ReactJS", icon: <FaReact /> },
-//   { skill: "Redux", icon: <SiRedux /> },
-//   { skill: "NextJS", icon: <SiNextdotjs /> },
-//   { skill: "TailwindCSS", icon: <RiTailwindCssFill /> },
-//   { skill: "Node.js", icon: <DiNodejs /> },
-//   { skill: "Express", icon: <DiNodejs /> },
-//   { skill: "MongoDB", icon: <SiMongodb /> },
-//   { skill: "MySQL", icon: <SiMysql /> },
-//   { skill: "Git", icon: <FaGit /> },
-//   { skill: "GitHub", icon: <VscGithub /> },
-//   { skill: "GitLab", icon: <SiGitlab /> },
-//   { skill: "Firebase", icon: <SiFirebase /> },
-//   { skill: "Bootstrap", icon: <DiBootstrap /> },
-//   { skill: "Docker", icon: <FaDocker /> },
-//   { skill: "Figma", icon: <FaGit /> },
-//   { skill: "Python", icon: <FaPython /> },
-//   { skill: "Java", icon: <FaJava /> },
-// ];
 
 const AllSkillsSM = () => {
   return (

@@ -11,7 +11,7 @@ const HeroPic = () => {
 
       {/* Profile Image with Hexagon Shape */}
       <img 
-        src='../../public/profile.jpeg' 
+        src='/profile.jpeg' 
         alt='profile' 
         className='max-h-[400px] w-auto relative z-0 opacity-90 
                    clip-path-hexagon border-4 border-cyan-400'
